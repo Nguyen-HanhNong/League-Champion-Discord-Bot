@@ -2,7 +2,7 @@ package com.nguyenhanhnong.discordbot;
 
 import com.nguyenhanhnong.discordbot.commands.CommandManager;
 import com.nguyenhanhnong.discordbot.listeners.EventListener;
-import com.nguyenhanhnong.discordbot.randomizer.Randomizer;
+
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.requests.GatewayIntent;
@@ -15,7 +15,6 @@ import net.dv8tion.jda.api.utils.cache.CacheFlag;
 
 import javax.security.auth.login.LoginException;
 
-
 public class LeagueBot {
 
     private final ShardManager shardManager;
@@ -27,7 +26,7 @@ public class LeagueBot {
 
         DefaultShardManagerBuilder builder = DefaultShardManagerBuilder.createDefault(token);
         builder.setStatus(OnlineStatus.ONLINE);
-        builder.setActivity(Activity.watching("Waiting for commands from League of Legends players"));
+        builder.setActivity(Activity.watching(" for commands from League of Legends players"));
         builder.enableIntents(GatewayIntent.GUILD_MEMBERS, GatewayIntent.MESSAGE_CONTENT);
 
         /* Cache all members and users of the bot */
@@ -51,7 +50,6 @@ public class LeagueBot {
     public static void main(String[] args) {
         try {
             LeagueBot testBot = new LeagueBot();
-            Randomizer randomizer = new Randomizer();
         } catch (LoginException e) {
             System.out.println("ERROR: Provided bot token is invalid");
             e.printStackTrace();
