@@ -40,15 +40,30 @@ public class Randomizer {
     }
 
     public String randomizedFullBuild() {
-        final int[] ints = new Random().ints(0, allItems.size()).distinct().limit(6).toArray();
-        Item[] items = new Item[6];
-        String returnString = "";
+        int[] ints;
+
+        while(true) {
+            boolean isFullBuild = false;
+            ints = new Random().ints(0, allItems.size()).distinct().limit(6).toArray();
+
+            for(Integer index: ints) {
+                if(allItems.get(index).getName().contains("Boots")) {
+                    isFullBuild = true;
+                }
+            }
+
+            if(isFullBuild) {
+                break;
+            }
+        }
+        StringBuilder returnString = new StringBuilder();
 
         for(int i = 0; i < 6; i++) {
-            returnString += allItems.get(i).getName() + "\n";
+            int randomItemIndex = ints[i];
+            returnString.append(allItems.get(randomItemIndex).getName()).append("\n");
         }
 
-        return returnString;
+        return returnString.toString();
     }
 
     public Randomizer() {

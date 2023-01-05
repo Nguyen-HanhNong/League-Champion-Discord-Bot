@@ -19,7 +19,6 @@ public class LeagueBot {
 
     private final ShardManager shardManager;
     private final Dotenv config;
-
     public LeagueBot() throws LoginException {
         config = Dotenv.configure().ignoreIfMalformed().load();
         String token = config.get("DISCORD_BOT_TOKEN");

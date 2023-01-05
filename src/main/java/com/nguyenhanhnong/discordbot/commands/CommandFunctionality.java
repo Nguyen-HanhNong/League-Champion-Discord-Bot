@@ -31,7 +31,7 @@ public class CommandFunctionality {
             embedBuilder.addField("Role", randomizer.randomizedRole(), true);
         }
 
-        embedBuilder.addField("Item Build: ", randomizer.randomizedFullBuild(), true);
+        embedBuilder.addField("Item Build: ", randomizer.randomizedFullBuild(), false);
         embedBuilder.setDescription("A random champion has been chosen for you.");
         embedBuilder.setAuthor("League of Legends Randomizer", "https://www.ultimate-bravery.net/", "https://static.wikia.nocookie.net/leagueoflegends/images/0/03/Season_2019_-_Iron_1.png");
         embedBuilder.setImage("https://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + randomChampion.getName() + "_0.jpg");
