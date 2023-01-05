@@ -6,7 +6,7 @@
 
 ## What is this application?
 
-This application is a discord bot that allows for randomization of items, roles and champions for League of Legends.
+This application is a discord bot that allows for the randomization of items, roles, and champions for League of Legends.
 
 The application integrates the Orianna API, to get information from the Riot Games Data Dragon database.
 
@@ -27,9 +27,9 @@ This application was written using Java and compiled using Apache Maven for a co
 2. Download the files and store them in a folder or clone the repository.
 3. Open IntelliJ and import the project (the folder containing the files from GitHub)
 4. Open the .xml file and make sure the dependencies and plugins are installed correctly.
-5. Replace `DISCORD_BOT_TOKEN` and `RIOT_API_KEY` locations with your own discord bot token and Riot Developer API key.
+5. Replace `DISCORD_BOT_TOKEN` and `RIOT_API_KEY` locations with your discord bot token and Riot Developer API key.
 6. Compile and run the application by running the LeagueBot java file.
 
 ## Potential Improvements and Advancements
 - Adding randomization for runes and summoner spells to the application
-- Adding integration with Riot's API to automatically change the runes and summonner spell of the player if they're currently playing League of Legends
+- Adding integration with Riot's API to automatically change the runes and summoner spell of the player if they're currently playing League of Legends
