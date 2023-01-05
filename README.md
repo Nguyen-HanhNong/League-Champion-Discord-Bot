@@ -21,3 +21,15 @@ This application was written using Java and compiled using Apache Maven for a co
 
 ## Video of the application running:
 ![](https://user-images.githubusercontent.com/81977350/210872626-f0d2a7b4-d91d-4081-a634-c3763601b322.gif)
+
+## Instructions to compile and run the application locally:
+1. Make sure you have the following downloaded: [Java](https://www.oracle.com/ca-en/java/technologies/downloads/) and [IntelliJ IDE](https://www.jetbrains.com/idea/download/#section=windows)
+2. Download the files and store them in a folder or clone the repository.
+3. Open IntelliJ and import the project (the folder containing the files from GitHub)
+4. Open the .xml file and make sure the dependencies and plugins are installed correctly.
+5. Replace `DISCORD_BOT_TOKEN` and `RIOT_API_KEY` locations with your own discord bot token and Riot Developer API key.
+6. Compile and run the application by running the LeagueBot java file.
+
+## Potential Improvements and Advancements
+- Adding randomization for runes and summoner spells to the application
+- Adding integration with Riot's API to automatically change the runes and summonner spell of the player if they're currently playing League of Legends
