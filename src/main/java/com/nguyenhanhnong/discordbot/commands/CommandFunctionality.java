@@ -41,4 +41,16 @@ public class CommandFunctionality {
 
         event.getChannel().sendMessageEmbeds(embedBuilder.build()).addFiles(FileUpload.fromData(localChampionImage,randomChampion.getName() + ".png")).queue();
     }
+
+    public static void creator(@NotNull SlashCommandInteractionEvent event) {
+        EmbedBuilder embedBuilder = new EmbedBuilder();
+
+        embedBuilder.setTitle("Creator of League Randomizer Bot");
+        embedBuilder.setDescription("This bot was created by Nguyen-Hanh Nong.");
+        embedBuilder.setAuthor("Nguyen-Hanh Nong", "https://github.com/Nguyen-HanhNong", "http://clipart-library.com/data_images/296567.png");
+        embedBuilder.setFooter("Data provided by Riot Games", "https://i.imgur.com/4Z0ZQ0x.png");
+        embedBuilder.setColor(Color.GREEN);
+
+        event.getChannel().sendMessageEmbeds(embedBuilder.build()).queue();
+    }
 }

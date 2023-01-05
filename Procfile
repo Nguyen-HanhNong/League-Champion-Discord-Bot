@@ -1,0 +1,1 @@
+worker: java -jar target/League-Champion-Discord-Bot-1.0-SNAPSHOT-jar-with-dependencies.jar

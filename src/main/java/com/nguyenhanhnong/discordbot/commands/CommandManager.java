@@ -21,6 +21,8 @@ public class CommandManager extends ListenerAdapter {
         OptionData roleOption = new OptionData(OptionType.STRING, "role", "The role you want to randomize", false).addChoice("Top", "Top").addChoice("Jungle", "Jungle").addChoice("Mid", "Mid").addChoice("ADC", "ADC").addChoice("Support", "Support");
         commandData.add(Commands.slash("randomize", "Return a randomized champion.").addOptions(roleOption));
 
+        commandData.add(Commands.slash("creator", "Return the creator/author of this bot."));
+
         return commandData;
     }
 
@@ -30,6 +32,9 @@ public class CommandManager extends ListenerAdapter {
 
        if(commandName.equals("randomize")) {
            CommandFunctionality.randomize(event);
+       }
+       else if(commandName.equals("creator")) {
+           CommandFunctionality.creator(event);
        }
        else {
            event.reply("Command not found").queue();
